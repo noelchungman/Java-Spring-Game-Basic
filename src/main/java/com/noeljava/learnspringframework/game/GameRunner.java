@@ -1,7 +1,7 @@
 package com.noeljava.learnspringframework.game;
 
 public class GameRunner {
-	MarioGame game;
+	private MarioGame game;
 
 	public GameRunner(MarioGame game){
 		this.game = game;
@@ -10,6 +10,10 @@ public class GameRunner {
 	public void run() {
 		System.out.println("Running game: " 
 			+ game);
+		game.up();
+		game.down();
+		game.left();
+		game.right();
 	}
 
 }
